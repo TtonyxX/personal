@@ -1,0 +1,433 @@
+<html lang="en">
+
+	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140392398-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-140392398-1');
+            
+            if((window.location.href).toString().includes("tonyxin.ga")) {
+                window.location.href = "http://tonyxin.com";
+            }
+        </script>
+
+
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="Keywords" content="Tony Xin,Tony,Xin,Developer,Creation">
+        <meta name="Description" content="This is the personal website of Tony Xin, a highschooler in love with creation.">
+        <meta name="google-site-verification" content="HqXMSS9aQVWeHB-z3mOcTAfZ2ZDbxcTXHV1mWmc31vI" />
+
+
+		<title>Tony Xin</title>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+		<title>Tony Xin</title>
+
+		<style>
+
+            html {
+                scroll-behavior: smooth;
+                background-color: lightblue;
+                overflow-x: hidden;
+            }
+
+            .card {
+                transition: all 0.6s;
+                width: 360px;
+            }
+
+            .card-proj {
+                height: 380px;
+            }
+
+            .card-volun {
+                height: 400px;
+            }
+
+            .card-acti {
+                height: 500px;
+            }
+
+            .card-body > p {
+                margin-top: 10px;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            #leadershipacademy {
+                width: 600px;
+            }
+
+            #jumbo-text-container {
+                height: 400px;
+                width: 700px;
+                position: absolute;
+                left: 15vw;
+                top: 150px;
+            }
+
+			.title-text {
+				margin-right: 40%;
+			}
+
+			.gray {
+				background-color: gray;
+			}
+
+            #face-click:hover {
+                cursor: pointer;
+            }
+
+			#cover-image {
+				height: 100%;
+				background-image: url('images/meditation-compressed.jpg');
+				background-size: cover;
+				background-color: lightgray;
+			}
+
+			.odd {
+				background-color: lightgray;
+				padding: 20px;
+			}
+
+			.even {
+				background-color: lightgreen;
+				padding: 20px;
+			}
+
+            #github-img {
+            }
+
+			.linked-image {
+				display: inline-block;
+                transition: all 0.3s;
+			}
+
+            .linked-image:hover {
+                filter: grayscale(1);
+                transform: scale(1.1);
+                filter: drop-shadow(3px 3px 3px #000);
+            }
+
+			.my-gray-gradient {
+				background: rgb(255,255,255);
+				background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(235,229,229,1) 35%, rgba(181,181,181,1) 100%);
+			}
+
+			#nav-bar {
+				background: rgb(100, 176, 216);
+			}
+
+            .card {
+                display: inline-block;
+            }
+
+            .transparent {
+                background: transparent !important;
+                border: none !important;
+                font-size:0;
+                width: 200px;
+                height: 70px;
+            }
+
+            hr {
+                color: black;
+            }
+
+            .language {
+                height: 100px;
+                -webkit-transition: height 0.9s, font-size 1s; /* Safari */
+                transition: height 0.9s, font-size 1s;
+                font-size: 15px;
+                margin-top: 30px;
+            }
+
+            .language:hover {
+                height: 200px;
+                font-size: 25px;
+            }
+
+            #not-optimized {
+                width: 100vw;
+                height: 100vh;
+                background-color: white;
+                position: fixed;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+
+            #face-click {
+                height: 80px;
+                width: 100px;
+                background-color: transparent;
+                position: absolute;
+                left: 59vw;
+                top: 23vh;
+                border-radius: 10px;
+                transition: all 0.5s;
+            }
+
+            #face-click:hover {
+                background-color: rgba(0, 0, 0, 0.15);
+                filter: grayscale(1);
+                transform: scale(1.1);
+                filter: drop-shadow(10px 10px 10px #000);
+            }
+
+            /*
+            @media only screen and (max-width: 600px) {
+                #not-optimized {
+                    display: inline;
+                }
+            }
+            */
+
+            #about-container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            #linked-image-container {
+                display: flex; justify-content: center; align-items: center; width: 420px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                #about-container {
+                    flex-direction: column;
+                }
+
+                #about-header {
+                    margin-top: 40px;
+                }
+
+                #tony-img {
+                    border-radius: 10px;
+                }
+
+                #jumbo-text-container {
+                    height: 200px;
+                    width: 120vw;
+                    display: inline-block;
+                }
+
+                #linked-image-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300px;
+                }
+
+                #jumbo-container {
+                    text-align: center;
+                }
+
+                #leadershipacademy {
+                    width: 350px;
+                }
+
+                .card {
+                    width: 350px;
+                }
+
+            }
+
+		</style>
+	</head>
+
+	<body>
+
+		  <!--Navbar-->
+			<nav id="nav-bar" class="navbar navbar-expand-lg navbar-light lighten-3 animated fadeInDown" style="z-index: 100; position: relative;">
+
+			  <!-- Navbar brand -->
+			  <a class="navbar-brand ml-2" style="font-size: 25px; font-weight: bold;" href="index.html"><img src="images/favicon.ico" width="40px;"></a>
+
+			  <!-- Collapse button -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item dropdown" id="portfolio">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Portfolio
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#creations">Creations</a>
+			          <a class="dropdown-item" href="#volunteering">Volunteering</a>
+			          <a class="dropdown-item" href="#activities">Activities</a>
+			          <a class="dropdown-item" href="#work-experience">Work Experience</a>
+			          <a class="dropdown-item" href="#languages">Languages</a>
+			        </div>
+			      </li>
+			      <li class="nav-item" id="contact">
+			        <a class="nav-link" href="contact.html">Contact Me<span class="sr-only">(current)</span></a>
+			      </li>
+			    </ul>
+
+                <ul class="navbar-nav nav-flex-icons" style="font-size:1.60em">
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/TtonyxX"><i class="fa fa-github"></i></a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/tony-xin-041985174/"><i class="fa fa-linkedin-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://www.youtube.com/user/1XxDoubleshotxX1"><i class="fa fa-youtube-play"></i></a>
+                    </li>
+                </ul>
+			  </div>
+			</nav>
+		</nav>
+
+<div style="background-color: rgb(100, 176, 216);">
+<!--Carousel Wrapper-->
+<div id="video-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#video-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#video-carousel" data-slide-to="1"></li>
+    <li data-target="#video-carousel" data-slide-to="2"></li>
+    <li data-target="#video-carousel" data-slide-to="3"></li>
+    <li data-target="#video-carousel" data-slide-to="4"></li>
+    <li data-target="#video-carousel" data-slide-to="5"></li>
+    <li data-target="#video-carousel" data-slide-to="6"></li>
+    <li data-target="#video-carousel" data-slide-to="7"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <center><img src="images/rubikscube.png" style="height: 90vh;"/></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="images/juggling.jpg" style="height: 90vh;"/></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="images/basketball.png" style="height: 90vh;"/></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="images/handstand.jpg" style="height: 90vh;"/></center>
+    </div>
+    <div class="carousel-item">
+      <center><img src="images/flip.png" style="height: 90vh;"/></center>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#video-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--Carousel Wrapper-->
+
+<hr>
+
+<div style="height: 100vh; padding-top: 5vh;">
+
+    <center><h1 class="mt-3 mb-3 wow fadeInUp">More Links</h1></center>
+
+    <center>
+
+    <div class="wow fadeInUp">
+        <a href="https://photos.app.goo.gl/yaBR1Ds7byvDPQwb8" target="_blank"><button type="button" class="btn btn-default mt-3 mb-3">Pictures</button></a>
+        <a href="https://www.facebook.com/yytonyxin" target="_blank"><button type="button" class="btn btn-default mt-3 mb-3">Facebook</button></a>
+        <a href="https://angel.co/tony-xin" target="_blank"><button type="button" class="btn btn-default mt-3 mb-3">AngelList</button></a>
+        <a href="https://open.spotify.com/user/nindopan?si=e4kEKr2QRR6hwYGKqiwh9g" target="_blank"><button type="button" class="btn btn-default mt-3 mb-3">Spotify</button></a>
+    </div>
+
+    </center>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+<script type="text/javascript">
+
+	$("#about").removeClass("active");
+    new WOW().init();
+
+</script>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	  	<!-- Bootstrap tooltips -->
+	  	<script type="text/javascript" src="js/popper.min.js"></script>
+	  	<!-- Bootstrap core JavaScript -->
+	  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	  	<!-- MDB core JavaScript -->
+	  	<script type="text/javascript" src="js/mdb.min.js"></script>
+
+        <script>
+
+        if((window.location.href).toString().includes("tonyxin.ga")) {
+            window.location.href = "http://tonyxin.com";
+        }
+
+        function animateCSS(element, animationName, callback) {
+            const node = document.querySelector(element)
+            node.classList.add('animated', animationName/*, 'slow'*/)
+
+            function handleAnimationEnd() {
+                node.classList.remove('animated', animationName/*, 'slow'*/)
+                node.removeEventListener('animationend', handleAnimationEnd)
+
+                if (typeof callback === 'function') callback()
+            }
+
+            node.addEventListener('animationend', handleAnimationEnd)
+        }
+
+        </script>
+
+	</body>
+
+</html>
