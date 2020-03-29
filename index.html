@@ -1,0 +1,796 @@
+<html lang="en">
+
+	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140392398-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-140392398-1');
+            
+            if((window.location.href).toString().includes("tonyxin.ga")) {
+                window.location.href = "http://tonyxin.com";
+            }
+        </script>
+
+
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="Keywords" content="Tony Xin,Tony,Xin,Developer,Creation">
+        <meta name="Description" content="This is the personal website of Tony Xin, a highschooler in love with creation.">
+        <meta name="google-site-verification" content="HqXMSS9aQVWeHB-z3mOcTAfZ2ZDbxcTXHV1mWmc31vI" />
+
+
+		<title>Tony Xin</title>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+		<title>Tony Xin</title>
+
+		<style>
+
+            html {
+                scroll-behavior: smooth;
+                background-color: lightblue;
+                overflow-x: hidden;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            #jumbo-text-container {
+                height: 400px;
+                width: 700px;
+                position: absolute;
+                left: 15vw;
+                top: 100px;
+            }
+
+			.title-text {
+				margin-right: 40%;
+			}
+
+			.gray {
+				background-color: gray;
+			}
+
+            #face-click:hover {
+                cursor: pointer;
+            }
+
+			#cover-image {
+				height: 100%;
+				background-image: url('images/meditation-compressed.jpg');
+				background-size: cover;
+				background-color: lightgray;
+			}
+
+			.odd {
+				background-color: lightgray;
+				padding: 20px;
+			}
+
+			.even {
+				background-color: lightgreen;
+				padding: 20px;
+			}
+
+            #github-img {
+            }
+
+			.linked-image {
+				display: inline-block;
+                transition: all 0.3s;
+			}
+
+            .linked-image:hover {
+                filter: grayscale(1);
+                transform: scale(1.1);
+                filter: drop-shadow(3px 3px 3px #000);
+            }
+
+			.my-gray-gradient {
+				background: rgb(255,255,255);
+				background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(235,229,229,1) 35%, rgba(181,181,181,1) 100%);
+			}
+
+			#nav-bar {
+				background: rgb(100, 176, 216);
+			}
+
+            .card {
+                display: inline-block;
+            }
+
+            .transparent {
+                background: transparent !important;
+                border: none !important;
+                font-size:0;
+                width: 200px;
+                height: 70px;
+            }
+
+            hr {
+                color: black;
+            }
+
+            .language {
+                height: 100px;
+                -webkit-transition: height 0.9s, font-size 1s; /* Safari */
+                transition: height 0.9s, font-size 1s;
+                font-size: 15px;
+                margin-top: 30px;
+            }
+
+            .language:hover {
+                height: 200px;
+                font-size: 25px;
+            }
+
+            #not-optimized {
+                width: 100vw;
+                height: 100vh;
+                background-color: white;
+                position: fixed;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+
+            #face-click {
+                height: 80px;
+                width: 100px;
+                background-color: transparent;
+                position: absolute;
+                left: 59vw;
+                top: 23vh;
+                border-radius: 10px;
+                transition: all 0.5s;
+            }
+
+            #face-click:hover {
+                background-color: rgba(0, 0, 0, 0.15);
+                filter: grayscale(1);
+                transform: scale(1.1);
+                filter: drop-shadow(10px 10px 10px #000);
+            }
+
+            /*
+            @media only screen and (max-width: 600px) {
+                #not-optimized {
+                    display: inline;
+                }
+            }
+            */
+
+            #about-container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            #linked-image-container {
+                display: flex; justify-content: center; align-items: center; width: 420px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                #about-container {
+                    flex-direction: column;
+                }
+
+                #about-header {
+                    margin-top: 40px;
+                }
+
+                #tony-img {
+                    border-radius: 10px;
+                }
+
+                #jumbo-text-container {
+                    height: 200px;
+                    width: 120vw;
+                    display: inline-block;
+                }
+
+                #linked-image-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300px;
+                }
+
+                #jumbo-container {
+                    text-align: center;
+                }
+
+            }
+
+		</style>
+	</head>
+
+	<body>
+
+		  <!--Navbar-->
+			<nav id="nav-bar" class="navbar navbar-expand-lg navbar-light lighten-3 animated fadeInDown" style="z-index: 100; position: relative;">
+
+			  <!-- Navbar brand -->
+			  <a class="navbar-brand" style="font-size: 30px; font-weight: bold;" href="index.html">Tony Xin</a>
+
+			  <!-- Collapse button -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item dropdown" id="portfolio">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Portfolio
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#creations">Creations</a>
+			          <a class="dropdown-item" href="#volunteering">Volunteering</a>
+			          <a class="dropdown-item" href="#activities">Activities</a>
+			          <a class="dropdown-item" href="#work-experience">Work Experience</a>
+			          <a class="dropdown-item" href="#languages">Languages</a>
+			        </div>
+			      </li>
+			      <li class="nav-item" id="contact">
+			        <a class="nav-link" href="contact.html">Contact Me<span class="sr-only">(current)</span></a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+    </nav>
+    
+    <div class="jumbotron jumbotron-fluid heading animated fadeIn mb-0" id="cover-image" style="position: relative; z-index: 40;">
+      <div class="container" id="jumbo-container">
+        <div id="jumbo-text-container">
+            <h1 class="display-3 text-center title-text animated fadeInUp fast">Tony Xin</h1>
+            <h4 style="font-size: 23px;" class="lead text-center title-text animated fadeInUp">A person who has a passion for creation</h4>
+            <div id="linked-image-container" class="animated fadeInUp">
+                <a target=”_blank” href="https://github.com/TtonyxX"><img class="linked-image" src="images/github.png" id="github-img"></a>
+                <a target=”_blank” href="https://www.linkedin.com/in/tony-xin-041985174/"><img class="linked-image" src="images/linkedin.png"></a>
+                <a target=”_blank” href="https://www.youtube.com/user/1XxDoubleshotxX1"><img class="linked-image" src="images/youtube.png" style="width: 50px;"></a>
+                <!--<a target=”_blank” href="https://www.facebook.com/yytonyxin"><img class="linked-image" src="images/facebook.png" style="width: 40px;"></a>-->
+            </div>
+        </div>
+        <h5 style="position: absolute; right: 10px; bottom: 0px;" id="date-taken"><strong>Taken April 2017</strong></h5>
+        <div id="face-click"></div>
+      </div>
+    </div>
+    
+    <!-- Panel -->
+    
+    <div class="mt-0 odd my-gray-gradient">
+      <div class="container mt-3" style="min-height: 450px;">
+        <div class="panel text-center" id="about-container">
+                <div class="wow fadeInUp">
+              <center><img id="tony-img" alt="Tony Xin" src="images/tonyxin2.png" width="400px"></center>
+                </div>
+                <div>
+                    <h1 class="mt-2 wow fadeInup" id="about-header"><strong>About Me</strong></h1>
+                    <h3 class="wow fadeInUp" style="font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));">My name is Tony Xin and I am student living in the Silicon valley. I love to embark on projects because of my passion for creating and sharing. I am able to fulfill this passion through computer science.</h3> <!-- Add more -->
+                </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Portfolio part-->
+    
+    <div class="mt-0 even fadeInUp" id="creations">
+      <center><div class="container mt-3" style="padding-bottom: 10px;">
+        <h1 class="mt-1"><strong>Creations</strong></h1>
+    
+            <div class="card-group">
+                <div class="card mt-4">
+                <div class="card-body" id="patients">
+                    <div style="height: 15rem;">
+                        <img id="patients-first" style="width: 13rem;" class="card-img-top" src="images/patients.png" alt="Patients">
+                        <img id="patients-second" style="display: none; width: 20rem; border-radius: 5px;" class="card-img-top" src="images/patientsDemo.png" alt="Patients Demo">
+                    </div>
+                    <h5 class="card-title mt-1">Patients Tracker</h5>
+                    <p class="card-text">This is a website that allows one to log in with a google account and keep track of all of one's patients. Users can write notes on each patient and manage all of the patients on the front page.</p>
+                    <a class="card-link" target="_blank" href="http://patients.epizy.com/">patients.epizy.com</a>
+                </div>
+                </div>
+                <div class="card mt-4">
+                <div class="card-body" id="seatcharter">
+                    <div style="height: 15rem;">
+                        <img id="seatcharter-first" style="width: 13rem;" class="card-img-top" src="images/seatcharter.png" alt="Seat Charter">
+                        <img id="seatcharter-second" style="display: none; width: 21rem; margin-top: 1rem;" class="card-img-top" src="images/seatchartersample.png" alt="Seat Charter Sample">
+                    </div>
+                    <h5 class="card-title mt-1">Seat Charter</h5>
+                    <p class="card-text">A website that allows teachers to create seating charts for their students and write notes on them. The user simply needs to login with a google account and then can add students to each of their classes. </p>
+                    <a class="card-link" target="_blank" href="http://seatcharter.ga">seatcharter.ga</a>
+                </div>
+                </div>
+                <div class="card mt-4">
+                <div class="card-body" id="codet">
+                    <div style="height: 14rem;">
+                        <img id="codet-first" style="width: 13rem;" class="card-img-top" src="images/codet.jpg" alt="Codet">
+                        <img id="codet-second" style="display: none; width: 20rem; border-radius: 5px;" class="card-img-top" src="images/codetteach.jpg" alt="Codet Second">
+                    </div>
+                    <h5 class="card-title mt-3">Codet Camp</h5>
+                    <p class="card-text">I ran a free, 1-week-long summer camp over 2019 summer where I taught web development to middle to elementary schooler students. I brought them from knowning nothing about web development to understanding how to deploy a professional looking website to the internet.</p>
+                    <a class="card-link" target="_blank" href="https://ttonyxx.github.io/CodetCamp">codetcamp.com</a>
+                </div>
+                </div>
+            </div>
+    
+            <div class="card-group">
+                <div class="card mt-4">
+                <div class="card-body">
+                    <div style="height: 14rem; padding-top: 4rem;">
+                        <img class="card-img-top" src="images/tonystutoring.png" style="border-radius: 5px;" alt="Tony's Tutoring">
+                    </div>
+                    <h5 class="card-title mt-3">Tony's Tutoring</h5>
+                    <p class="card-text">This is my own tutoring business where you can learn things that aren't taught in school.</p>
+                    <a class="card-link" target="_blank" href="http://tonystutoring.epizy.com">tonystutoring.ga</a>
+                </div>
+                </div>
+                
+                <div class="card mt-4">
+                <div class="card-body" id="mochi">
+                    <div style="height: 15rem;">
+                        <img id="mochi-first" class="card-img-top" style="width: 14rem;" src="images/mochi.png" alt="Mochi Squares">
+                        <img style="display: none; border-radius: 5px;" id="mochi-second" class="card-img-top" src="images/mochidemo.PNG" alt="Mochi Squares Demo">
+                    </div>
+                    <h5 class="card-title mt-1">Mochi Squares</h5>
+                    <p class="card-text">A business that sells and delivers homemade mochi to the customer's doorstep. I lead the creation of this business with the help of a few friends and family over winter break.</p>
+                    <a class="card-link" target="_blank" href="http://mochisquares.ga">mochisquares.ga</a>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="sciolyweb">
+                    <div style="height: 14rem;">
+                        <img id="sciolyweb-first" class="card-img-top" style="height: 200px; width: 210px" src="http://mvscioly.x10host.com/images/scioly.png" alt="Scioly Website">
+                        <img id="sciolyweb-second" class="card-img-top" style="border-radius: 5px; display: none;" src="images/sciolyWeb.png" alt="Scioly Website">
+                    </div>
+                    <h5 class="card-title mt-3">Scioly Website</h5>
+                    <p class="card-text">This is a website that I created for the Mountain View HS nationally ranked Science Olympiad team. It incorporates authorization so only team members view confidential information.</p>
+                    <a class="card-link" target="_blank" href="http://mvscioly.com/">mvscioly.com</a>
+                </div>
+                </div>
+            </div>
+    
+            <div class="card-group">
+                <div class="card mt-4">
+                <div class="card-body">
+                    <div style="height: 15rem;">
+                        <img class="card-img-top" style="width: 17rem;" src="images/mias.png" alt="Mias">
+                    </div>
+                    <h5 class="card-title mt-1">Mias</h5>
+                    <p class="card-text">This is a chrome extension that detects the bias in new sites.</p>
+                    <a href="https://github.com/MVHSIgnition/MIAS" target=”_blank” class="card-link">github.com/MVHSIgnition/MIAS</a>
+                </div>
+                </div>
+    
+                <!--
+                <div class="card mt-4">
+                <div class="card-body">
+                        <img class="card-img-top" style="width: 15rem;" src="images/googonly.jpg" alt="Googonly">
+                    <h5 class="card-title mt-1">Googonly</h5>
+                    <p class="card-text">This is a chrome extension that redirects to Google when you go to other search engines.</p>
+                    <a href="https://github.com/TtonyxX/Googonly" target=”_blank” class="card-link">github.com/TtonyxX/Googonly</a>
+                </div>
+                </div>
+                -->
+    
+                <div class="card mt-4">
+                <div class="card-body" id="vc">
+                    <div style="height: 15rem;">
+                        <img id="vc-first" class="card-img-top" style="width: 17rem;" src="images/volunteerconnect.png" alt="Volunteer Connect">
+                        <img style="display: none; border-radius: 5px;" id="vc-second" class="card-img-top" src="images/vcDemo.png" alt="Volunteer Connect Demo">
+                    </div>
+                    <h5 class="card-title mt-1">Volunteer Connect</h5>
+                    <p class="card-text">A website that connects prospective volunteers with non-profit organizations.</p>
+                    <a class="card-link" target="_blank" href="http://volunteerconnect.epizy.com">volunteerconnect.epizy.com</a>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="chengyu">
+                    <div style="height: 15rem;">
+                        <img class="card-img-top" style="width: 20rem; margin-top: 1rem;" id="chengyu-first" src="images/chengyu.png" alt="Cheng Yu Daily">
+                        <img style="display: none; margin-top: 1rem;" id="chengyu-second" class="card-img-top" src="images/chengyuDemo.png" alt="Cheng Yu Daily">
+                    </div>
+                    <h5 class="card-title mt-1">Daily 成语</h5>
+                    <p class="card-text">A website that gives a daily 成语 for you to learn.</p>
+                    <a class="card-link" target=”_blank” href="http://chengyu.epizy.com/">chengyu.gq</a>
+                </div>
+                </div>
+            </div>
+    
+            <div class="card-group">
+                <div class="card mt-4" id="droplets">
+                <div class="card-body">
+                    <div style="height: 18rem;">
+                        <img id="droplets-first" class="card-img-top" style="height: 15rem; width: 15rem; margin-top: 1rem;" src="images/droplets.png" alt="Droplets">
+                        <img id="droplets-second" class="card-img-top" style="border-radius: 5px; display: none; margin-top: 1rem; width: 20rem;" src="images/dropletsdemo.png" alt="Droplets Demo">
+                    </div>
+                    <h5 class="card-title mt-3">Droplets</h5>
+                    <p class="card-text">A game where the goal is to hit the droplets in order to increase your score.</p>
+                    <a href="https://ttonyxx.github.io/Droplet" target=”_blank” class="card-link">droplets.ml</a>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="countdown">
+                    <div style="height: 19rem; padding-top: 1rem;">
+                        <img id="countdown-first" class="card-img-top" style="width: 13rem; height: 13rem;" src="images/clock.png" alt="Countdown">
+                        <img id="countdown-second" class="card-img-top" style="border-radius: 5px; display: none; margin-top: 1rem; width: 20rem;" src="images/clockdemo.png" alt="Countdown">
+                    </div>
+                    <h5 class="card-title mt-1">Test Countdown</h5>
+                    <p class="card-text">Countdown to SAT and ACT dates to help students plan their studying.</p>
+                    <a href="https://ttonyxx.github.io/countdown/" target=”_blank” class="card-link">ttonyxx.github.io/countdown</a>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="thoughts">
+                    <div style="height: 18rem;">
+                        <img id="thoughts-first" style="width: 15rem;" class="card-img-top" src="images/thoughts-blog.png" alt="Thoughts Blog">
+                        <img id="thoughts-second" style="display: none; border-radius: 5px;" class="card-img-top" src="images/thoughtsDemo.png" alt="Thoughts Blog">
+                    </div>
+                    <h5 class="card-title mt-1">Thoughts Blog</h5>
+                    <p class="card-text">This is a blog where I write about some of the multitude of thoughts that I have each day. This is my outlet for my thoughts for which I usually have to keep contained within me.</p>
+                    <a href="http://thoughtsblog.epizy.com" target=”_blank” class="card-link">thoughtsblog.epizy.com</a>
+                </div>
+                </div>
+            </div>
+            
+      </div>
+      <hr />
+    </div>
+    
+    <div class="mt-0 even fadeInUp" id="volunteering">
+      <center><div class="container" style="padding-bottom: 10px;">
+        <h1><strong>Volunteering</strong></h1>
+    
+            <div class="card-group" style="margin: 0;">
+                <div class="card mt-4">
+                <div class="card-body">
+                    <div style="height: 16rem;">
+                        <img class="card-img-top" src="images/shinshin2.jpg" style="border-radius: 5px; width: 18rem;" alt="Shin Shin Overseas Volunteering" style="">
+                    </div>
+                    <h5 class="card-title mt-3">Teaching in Xian, China</h5>
+                    <p class="card-text">I travelled to China over my 8th grade summer to teach less fortunate elementary school students about various subjects centering around what we do in the United States as Chinese-Americans.</p>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="coder-dojo">
+                    <div style="height: 17rem;">
+                        <img id="coder-dojo-first" class="card-img-top" src="images/coderdojo.jpg" style="width: 13rem;" alt="Teaching Programming">
+                        <img id="coder-dojo-second" class="card-img-top" src="images/teachingCoderDojo.jpg" style="border-radius: 5px; display: none;" alt="Teaching Programming">
+                    </div>
+                    <h5 class="card-title mt-1">Teaching Programming for CoderDojo</h5>
+                    <p class="card-text">I taught programming continuously with a non-profit called CoderDojo over the school year.</p>
+                    <a class="card-link" target="_blank" href="https://drive.google.com/open?id=1MCZx9QsLbXrvGWkgLLvaAplel7QS3fCl">Link to teaching slides</a>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body">
+                    <div style="height: 16rem;">
+                        <img class="card-img-top" style="border-radius: 5px;" src="images/langsong.jpg" alt="Performing" style="height: 13rem;">
+                    </div>
+                    <h5 class="card-title mt-3">Performing to Earn Money for Poor Chinese Schools</h5>
+                    <p class="card-text">I, along with four other people, recited a poem various times thoughout a year to both raise awareness and earn money for Chinese schools in rural areas that can't support themselves financially.</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="card-group">
+                <div class="card mt-4">
+                <div class="card-body">
+                    <div style="height: 15rem; padding-top: 1rem;">
+                        <img class="card-img-top" src="images/shinshin.jpg" style="width: 13rem;" alt="Shin Shin">
+                    </div>
+                    <h5 class="card-title mt-3">Shin Shin</h5>
+                    <p class="card-text">Shin Shin is a volunteering group that I was apart of. They propose various projects or opportunities to volunteer and I participate in it.</p>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="vex">
+                    <div style="height: 15rem;">
+                        <img id="vex-first" class="card-img-top" src="http://www.nsbe.org/getattachment/2019ac6b-d114-4fd3-9923-5d76f7e300c2/VEX-IQ.aspx?maxsidesize=600" style="width: 16rem; margin-top: 3rem;" alt="Vex IQ">
+                        <img id="vex-second" class="card-img-top" src="images/vexvolun.jpg" style="width: 18rem; display: none; border-radius: 5px;" alt="Vex IQ">
+                    </div>
+                    <h5 class="card-title mt-3">Vex IQ</h5>
+                    <p class="card-text">Vex IQ is a robotics competition for middle and elementary school students. I voltunteered at one of the regional competitions as a judge, deciding who is awarded the prizes.</p>
+                </div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="blach">
+                    <div style="height: 15rem;">
+                        <img id="blach-first" class="card-img-top" src="http://losaltos.cyberschool.com/images/getSchoolPicture.cfm?id=9" style="width: 15rem;" alt="Blach">
+                        <img id="blach-second" class="card-img-top" src="images/blachteaching.jpg" style="width: 18rem; display: none; border-radius: 5px;" alt="Blach">
+                    </div>
+                    <h5 class="card-title mt-3">Teaching at Blach</h5>
+                    <p class="card-text">I started an after-school club at Blach Intermediate School to introduce students to various areas of computer science. I teach there every Monday after school.</p>
+                </div>
+                </div>
+            </div>
+    
+      </div>
+        </center>
+      <hr />
+    </div>
+    
+    <div class="mt-0 even fadeInUp" id="activities">
+      <center><div class="container" style="padding-bottom: 10px;">
+        <h1><strong>Activites</strong></h1>
+    
+            <div class="card-group">
+                <div class="card mt-4">
+                <div class="card-body" id="scioly">
+                    <div style="height: 20rem; padding-top: 2rem;">
+                        <img id="scioly-first" class="card-img-top" src="images/scioly.jpg" alt="Science Olympiad" style="width: 21rem;">
+                        <img style="display: none; width: 15rem; border-radius: 5px;" id="scioly-second" class="card-img-top" src="images/trophy.jpg" alt="Science Olympiad">
+                    </div>
+                    <h5 class="card-title mt-1">Science Olympiad</h5>
+                    <p class="card-text">I participated in the Mountain View High School nationally ranked Science Olympiad team throughout my highschool years and it was both an enlightening and opportunistic experience. We competed and got 2nd at the state level and are hoping to go to nationals this year.</p>
+                </div>
+                <div class="card-footer text-muted text-center mt-4" style="background-color: yellow;"><strong>Best Performance:</strong> 2nd Place NorCal State Competition<br></div>
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body" id="botball">
+                    <div style="height: 20rem;">
+                        <img id="botball-first" class="card-img-top" src="images/botball.jpg" alt="Botball" style="width: 18rem;">
+                        <img style="display: none; width: 20rem; margin-top: 2rem; border-radius: 5px;" id="botball-second" class="card-img-top" src="images/gcer2019.JPG" alt="Botball">
+                    </div>
+                    <h5 class="card-title mt-1">Botball</h5>
+                    <p class="card-text">Botball is a robotics competition that I participated in throughout my years in high school and the most recent achievement was 9th place at GCER, the international competition. This was when I lead my team as team captain, leading the creation of the robots that we used to secure 9th place.</p>
+                </div>
+                    <div class="card-footer text-muted text-center" style="background-color: yellow; margin-top: 24px;"><strong>Best Performance:</strong> 9th Place at International GCER Tournament<br></div>    
+                </div>
+    
+                <div class="card mt-4">
+                <div class="card-body">
+                    <div style="height: 19rem;">
+                        <img class="card-img-top" src="images/swimming.gif" alt="Swimming" style="width: 13rem;">
+                    </div>
+                    <h5 class="card-title mt-3">Swimming</h5>
+                    <p class="card-text">I have participating in competitive swimming with PASA since I was 10 years old. Swimming is a rigorous sport that taught me to work hard for the goals I want to achieve.</p>
+                </div>
+                <div class="card-footer text-muted text-center" style="background-color: yellow; margin-top: 71px;"><strong>Best Performance:</strong> 1st Place 200IM Relay & 2nd Place 100 Breast @ SCVAL League Finals</div>
+                </div>
+            </div>
+    
+      </div>
+        </center>
+      <hr />
+    
+    </div>
+    
+    <div class="mt-0 even fadeInUp" id="work-experience">
+        <center>    
+            <div class="container" style="padding-bottom: 10px;">
+                <h1><strong>Work Experience</strong></h1>
+    
+                <div class="card mt-4">
+                <div class="card-body">
+                        <img id="first" class="card-img-top" src="images/leadershipacademy.png" alt="Leadership Academy">
+                    <h5 class="card-title mt-1">Teacher at Leadership Academy</h5>
+                    <p class="card-text">I was a teacher at Leadership academy over my 9th grade summer. I taught various programming subjects.</p>
+                </div>
+                </div>
+    
+            </div>
+        </center>
+      <hr />
+    
+    </div>
+    
+    <div class="mt-0 even fadeInUp" id="languages">
+        <center>    
+            <div class="container" style="padding-bottom: 10px;">
+                <h1><strong>Languages</strong></h1>
+    
+                <div class="card-group" style="width: 50vw; min-width: 200px;">
+                    <div class="card mt-4 language">
+                    <div class="card-body language-inside">
+                        <h5 class="card-title mt-1">English</h5>
+                        <p class="card-text" style="font-size: 20px; display: none;">Fluent<br>Native Language</p>
+                    </div>
+                    </div>
+    
+                    <div class="card mt-4 language">
+                    <div class="card-body language-inside" id="chinese">
+                        <h5 class="card-title mt-1">Chinese</h5>
+                        <p class="card-text" style="font-size: 20px; display: none;">Fluent<br>Workbooks and family</p>
+                    </div>
+                    </div>
+    
+                    <div class="card mt-4 language">
+                    <div class="card-body language-inside" id="french">
+                        <h5 class="card-title mt-1">French</h5>
+                        <p class="card-text" style="font-size: 20px; display: none;">Working Fluency<br>High school French<br>Two silver medals in the Grand Concours</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        
+      <center><button type="button" style="margin-top: 90%" class="transparent" onclick="window.location.href='randomSkills.php'" id="random-skills">My Random Skills</button></center>
+        
+    </div>
+    
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <script type="text/javascript">
+    
+        $("#show-phone").click(function() {
+            $("#not-optimized").fadeOut();
+        });
+    
+        $("#face-click").click(() => {
+            $("#cover-image").fadeOut();
+            $("#cover-image").css("background-image", "url('images/meditation2.jpg')");
+            $("#cover-image").addClass("text-white");
+            $("#cover-image").removeClass("text-dark");
+            $("#date-taken").html("<strong>Taken June 2019</strong>")
+            $("#cover-image").fadeIn();
+            setTimeout(function() {
+                $("#cover-image").addClass("text-dark");
+                $("#cover-image").removeClass("text-white");
+                $("#cover-image").fadeOut();
+                $("#cover-image").css("background-image", "url('images/meditation.png')");
+                $("#date-taken").html("<strong>Taken April 2017</strong>")
+                $("#cover-image").fadeIn();
+            }, 3000);
+        });
+    
+      $("#portfolio").removeClass("disabled");
+        new WOW().init();
+    
+        $("#random-skills").hover(
+            function() {
+                $("#random-skills").removeClass("transparent");
+                $("#random-skills").addClass("blue-gradient btn btn-info btn-rounded");
+                console.log("Adding");
+            }, function() {
+                $("#random-skills").addClass("transparent");
+                $("#random-skills").removeClass("blue-gradient btn btn-info btn-rounded");
+            }
+        );
+    
+        $(".language-inside").hover(
+            function() {
+                $( this ).find( "p:last" ).fadeIn();
+            }, function() {
+                $( this ).find( "p:last" ).fadeOut();
+            }
+        );
+    
+        // function changeImage(element, prevImg, nextImg, prevImgSize, nextImgSize) {
+        //     $(element).hover(
+        //         function() {
+        //             $( this ).attr( "src", nextImg );
+        //             $( this ).css( "width", nextImgSize );
+        //             animateCSS(element, "fadeIn");
+        //         }, function() {
+        //             $( this ).attr( "src", prevImg );
+        //             $( this ).css( "width", prevImgSize );
+        //             animateCSS("#coder-dojo-img", "fadeIn");
+        //         }
+        //     );
+        // }
+    
+        function changeImage(outer, first, second) {
+            $(outer).hover(
+                function() {
+                    // animateCSS(first, second, function() {
+                    //     $(first).hide();
+                    //     $(second).show();
+                    // })
+                    // animateCSS(second, "fadeIn");
+                    $(first).fadeOut();
+                    
+                    setTimeout(() => {
+                        $(first).hide();
+                        $(second).fadeIn();
+                    }, 500);
+                }, function() {
+                    // animateCSS(second, "fadeOut", function() {
+                    //     $(first).show();
+                    //     $(second).hide();
+                    // })
+                    // animateCSS(first, "fadeIn");
+                    $(second).fadeOut();
+                    
+                    setTimeout(() => {
+                        $(second).hide();
+                        $(first).fadeIn();
+                    }, 500);
+                }
+            );
+        }
+    
+        changeImage("#coder-dojo", "#coder-dojo-first", "#coder-dojo-second");
+        changeImage("#scioly", "#scioly-first", "#scioly-second");
+        changeImage("#botball", "#botball-first", "#botball-second");
+        changeImage("#patients", "#patients-first", "#patients-second");
+        changeImage("#vc", "#vc-first", "#vc-second");
+        changeImage("#thoughts", "#thoughts-first", "#thoughts-second");
+        changeImage("#chengyu", "#chengyu-first", "#chengyu-second");
+        changeImage("#codet", "#codet-first", "#codet-second");
+        changeImage("#seatcharter", "#seatcharter-first", "#seatcharter-second");
+        changeImage("#sciolyweb", "#sciolyweb-first", "#sciolyweb-second");
+        changeImage("#countdown", "#countdown-first", "#countdown-second");
+        changeImage("#droplets", "#droplets-first", "#droplets-second");
+        changeImage("#blach", "#blach-first", "#blach-second");
+        changeImage("#vex", "#vex-first", "#vex-second");
+        changeImage("#mochi", "#mochi-first", "#mochi-second");
+    
+        // $("#coder-dojo-img").hover(
+        //     function() {
+        //         animateCSS("#coder-dojo-img", "fadeIn");
+        //         $( this ).attr( "src", "images/teachingCoderDojo.jpg" );
+        //         $( this ).css( "width", "18rem" );
+        //     }, function() {
+        //         animateCSS("#coder-dojo-img", "fadeIn");
+        //         $( this ).attr( "src", "images/coderdojo.jpg" );
+        //         $( this ).css( "width", "13rem" );
+        //     }
+        // );
+     
+    
+    </script>
+    		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+  
+          <script>
+  
+          if((window.location.href).toString().includes("tonyxin.ga")) {
+              window.location.href = "http://tonyxin.com";
+          }
+  
+          function animateCSS(element, animationName, callback) {
+              const node = document.querySelector(element)
+              node.classList.add('animated', animationName/*, 'slow'*/)
+  
+              function handleAnimationEnd() {
+                  node.classList.remove('animated', animationName/*, 'slow'*/)
+                  node.removeEventListener('animationend', handleAnimationEnd)
+  
+                  if (typeof callback === 'function') callback()
+              }
+  
+              node.addEventListener('animationend', handleAnimationEnd)
+          }
+  
+          </script>
+  
+    </body>
+  
+  </html>
