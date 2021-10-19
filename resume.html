@@ -420,104 +420,13 @@
 			</nav>
 		</nav>
 
-<!--Section: Contact v.2-->
-<section class="mb-4">
 
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
-    <!--Section description-->
-    <div class="container">
-     <p class="text-center w-responsive mx-auto mb-2">Do you wish to contact me? Fill in the information below or <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=yytonyxin@gmail.com">email me</a> and I'll try to get back as soon as possible!</p>
-    </div>
-       
+<div align="center" justify="center" >
+<iframe style="min-height: 1800px" id="resume-content" src="https://docs.google.com/document/d/e/2PACX-1vQ-_-emy4rodADOauUVccGn9hY2lMZJOe6sr3CPun9YCVd9_J0CJYg1ta8TcYGhC0mT3cIQ6-q563oi/pub?embedded=true" scrolling="no"></iframe>
+<br>
+<a href="public/resume.pdf" target="_blank"><button type="submit" class="btn btn-info btn-sm mb-5">Download</button></a>
+</div>
 
-        <!--Grid column-->
-        <div class="col-md-12 mb-5" style="padding: 0px 20%;">
-            <form class="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycby41OIFa65rvSyxHIvhh571iuOp_gYTm_Q1vX9L0kOo9tui8y8/exec">
-
-
-
-                <br>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" required autocomplete="off" class="form-control">
-                            <label for="name">Name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="emailadd" name="emailadd" required autocomplete="off" class="form-control"/>
-                            <label for="emailadd">Email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                 <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject">Subject</label>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-                
-                <center><button id="submit" class="mt btn btn-info">Submit</button></center>
-
-                <!-- Thank you form -->
-                <div class="thankyou_message" style="display:none;">
-                    Thanks for contacting me! I'll get back to you as soon as possible.
-                </div>
-
-            </form>
-
-
-            
-            <!--
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="validateForm()">Send</a>
-            </div>
-            <div id="status"></div>-->
-        </div>
-        <!--Grid column-->
-
-    </div>
-
-</section>
-<!--Section: Contact v.2-->
-
-<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="js/popper.min.js"></script>
@@ -530,35 +439,11 @@
 
     $("#portfolio").hide();
     $("#portfolio-alt").show();
-	$("#contact").addClass("active");
-	$("#about").removeClass("active");
 
-	function validateForm() {
+    $("#about").removeClass("active");
+    new WOW().init();
 
-		document.getElementById('status').innerHTML = "Sending...";
-		formData = {
-			'name'     : $('input[name=name]').val(),
-			'email'    : $('input[name=email]').val(),
-			'subject'  : $('input[name=subject]').val(),
-			'message'  : $('textarea[name=message]').val()
-		};
-
-
-		$.ajax({
-			url : "mail.php",
-			type: "POST",
-			data : formData,
-			success: function(data, textStatus, jqXHR) {
-				$('#status').text(data.message);
-				if (data.code) //If mail was sent successfully, reset the form.
-				$('#contact-form').closest('form').find("input[type=text], textarea").val("");
-			},
-			error: function (jqXHR, textStatus, errorThrown) {
-				$('#status').text(jqXHR);
-			}
-		});
-
-	}
+    $("#resume").addClass("active");
 
 </script>
 
