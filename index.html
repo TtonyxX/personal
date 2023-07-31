@@ -87,7 +87,7 @@
                 font-size: 50px;
             }
 
-            #leadershipacademy {
+            .workexperience {
                 width: 600px;
             }
 
@@ -325,7 +325,7 @@
                     text-align: center;
                 }
 
-                #leadershipacademy {
+                .workexperience {
                     width: 350px;
                 }
 
@@ -464,6 +464,18 @@
 	<center><div class="container mt-5 mb-5" style="padding-bottom: 10px;">
 		<h1 class="mt-1 wow fadeInUp" style="font-size: var(--section-font-size);"><strong>Creations</strong></h1>
             
+            <div class="card mt-4">
+            <div class="card-body" id="tomotime">
+                <div style="height: 15rem;">
+                    <img class="card-img-top" style="width: 9rem; margin-top: 50px; border-radius: 30px" id="schej-first" src="https://tomotime.app/assets/icon.png" alt="AssignHub">
+                </div>
+                <h5 class="card-title mt-1">Tomotime</h5>
+                <p class="card-text">The app to actually stay connected with friends
+                </p>
+                <a class="card-link" target=”_blank” href="https://tomotime.app">tomotime.app</a>
+            </div>
+            </div>
+
             <div class="card mt-4">
             <div class="card-body" id="schej">
                 <div style="height: 15rem;">
@@ -786,7 +798,23 @@
         <div class="container mb-5" style="padding-bottom: 10px;">
             <h1 class="wow fadeInUp" style="font-size: var(--section-font-size);"><strong>Work Experience</strong></h1>
 
-            <div class="card mt-4" id="leadershipacademy">
+            <div class="card mt-4 workexperience">
+                <div class="card-body">
+                        <img id="first" class="card-img-top" style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 4rem; padding-right: 4rem;" src="https://i.imgur.com/UUmQR3E.png" alt="Aurora Solar">
+                    <h5 class="card-title mt-1">Product Management Intern at Roblox</h5>
+                    <p class="card-text">Delivered QR Code Scanner and Profile Link Sharing features to the Roblox app, working closely with engineers to create detailed engineering task breakdowns.</p>
+                </div>
+                </div>
+
+            <div class="card mt-4 workexperience">
+            <div class="card-body">
+                    <img id="first" class="card-img-top" style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 4rem; padding-right: 4rem;" src="data:image/png;base64,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" alt="Aurora Solar">
+                <h5 class="card-title mt-1">Software Engineer Intern at Aurora Solar</h5>
+                <p class="card-text">Developed a robust financing comparison feature, enabling users to easily visualize various financing data - improved user experience for 40k+ projects/week.</p>
+            </div>
+            </div>
+
+            <div class="card mt-4 workexperience">
             <div class="card-body">
                     <img id="first" class="card-img-top" src="https://i.imgur.com/ITsQk4N.jpg" alt="Silicon Labs">
                 <h5 class="card-title mt-1">Software Engineer Intern at Silicon Labs</h5>
@@ -794,14 +822,13 @@
             </div>
             </div>
 
-            <div class="card mt-4" id="leadershipacademy">
+            <div class="card mt-4 workexperience">
             <div class="card-body">
                     <img id="first" class="card-img-top" src="images/leadershipacademy.png" alt="Leadership Academy">
                 <h5 class="card-title mt-1">Teacher at Leadership Academy</h5>
                 <p class="card-text">I was a teacher at Leadership academy over my 9th grade summer. I taught various programming subjects.</p>
             </div>
             </div>
-
         </div>
     </center>
 	<hr />
